@@ -21,6 +21,7 @@ p {
 
 .personal-subtitle {
     color: #CCCCCC;
+    white-space: pre-wrap;
 }
 
 /* Nav */
@@ -33,6 +34,20 @@ p {
 
 .nav-link-style:hover {
     color: #8e8e8e;
+}
+
+.nav-style {
+    position: sticky;
+    top: 50px;
+    z-index: 1;
+
+}
+
+/* Main Content */
+
+.main-content-style {
+    height: 100%;
+    padding-bottom: 50px;
 }
 
 /* button proyects */
@@ -49,6 +64,28 @@ p {
     color: #8e8e8e;
     border-color: #8e8e8e;
 }
+
+/* Proyect Content */
+
+.proyect-content-style {
+    white-space: pre-wrap;
+}
+
+.color-text {
+    color: #CCCCCC;
+}
+
+.color-text ul {
+    list-style-type: disc;
+    margin-left: 1.5em;
+    color: white;
+}
+
+.color-text ul ul {
+    list-style-type: circle;
+    margin-left: 1.5em;
+}
+
 
 /* Links Contact */
 

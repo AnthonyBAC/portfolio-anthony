@@ -1,3 +1,8 @@
+---
+// Supports weights 100-700
+import '@fontsource-variable/roboto-mono'
+---
+
 <!doctype html>
 <html lang='en'>
   <head>
@@ -12,6 +17,7 @@
     />
     <title>Astro Basics</title>
   </head>
+
   <body>
     <slot />
   </body>
@@ -23,16 +29,46 @@
 
   body {
     padding: 50px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: row;
   }
+
+  html {
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  /* Oculta el scrollbar */
+  html::-webkit-scrollbar {
+    width: 8px;
+    opacity: 0;
+  }
+
+  /* El "track" (fondo del scroll) */
+  html::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  /* El "thumb" (la barra en sí) */
+  html::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }
+
+  /* Al hacer hover sobre el html, muestra el scroll */
+  html:hover::-webkit-scrollbar {
+    opacity: 1;
+    width: 8px;
+  }
+
   html,
   body {
     margin: 0;
     width: 100%;
     height: 100%;
     background-color: black;
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
+    font-family: 'Roboto Mono Variable', monospace;
   }
 </style>
