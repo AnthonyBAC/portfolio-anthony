@@ -6,12 +6,12 @@ export default function PersonalContent() {
     <main className="min-w-[300px] max-w-[700px]">
       <div className="flex flex-row gap-[50px]">
         {/* Borde  */}
-        <div className="w-[2px] bg-black/50" />
+        <div className="w-[1px] bg-[#CCCCCC]" />
 
         {/* Contenido */}
         <div className="flex flex-col gap-[50px]">
-          <h1>{personal.title}</h1>
-          <div id="subtitles" className="flex flex-col">
+          <h1 className='personal-title'>{personal.title}</h1>
+          <div id="subtitles" className="flex flex-col personal-subtitle">
             <p>{personal.subtitle}</p>
           </div>
         </div>

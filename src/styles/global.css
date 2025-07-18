@@ -7,21 +7,64 @@ nav {
     line-height: 24px;
 }
 
-h1 {
-    color: black;
-}
+
 
 p {
-    color: black;
+    text-align: left;
+
 }
 
-button {
-    color: grey;
+/* PERSONAL CONTENT */
+.personal-title {
+    color: #CCCCCC;
+}
+
+.personal-subtitle {
+    color: #CCCCCC;
+}
+
+/* Nav */
+.nav-link-style {
+    color: #CCCCCC;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
 
-button:hover {
-    color: black
+.nav-link-style:hover {
+    color: #8e8e8e;
+}
+
+/* button proyects */
+
+.button-proyects {
+    color: #CCCCCC;
+    text-decoration: none;
+    cursor: pointer;
+    border-bottom: 1px solid #CCCCCC;
+    transition: all 0.3s ease-in-out;
+}
+
+.button-proyects:hover {
+    color: #8e8e8e;
+    border-color: #8e8e8e;
+}
+
+/* Links Contact */
+
+.link {
+    color: #CCCCCC;
+    text-decoration: none;
+    padding: 5px;
+    border: 1px solid #CCCCCC;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    height: fit-content;
+    width: 100px;
+    text-align: center;
+}
+
+.link:hover {
+    color: #8e8e8e;
+    border-color: #8e8e8e;
 }

@@ -6,6 +6,7 @@ export default function Nav({ links, activeKey, onChange }) {
                 {links.map((link) => (
                     <li key={link.key}>
                         <button
+                            className='nav-link-style'
                             type="button"
                             onClick={() => onChange(link.key)}
 

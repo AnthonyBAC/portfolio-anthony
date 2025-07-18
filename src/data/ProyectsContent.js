@@ -1,4 +1,15 @@
-export const proyects = {
-    title: 'Anthony Adasme Correa',
-    subtitle: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."  ',
-}
+// data/ProyectsContent.ts
+export const proyects = [
+  {
+    id: 1,
+    name: 'Proyecto 1',
+    date: '2025-07-18',
+    description: 'Este es el detalle del Proyecto 1',
+  },
+  {
+    id: 2,
+    name: 'Proyecto 2',
+    date: '2025-07-17',
+    description: 'Este es el detalle del Proyecto 2',
+  },
+];
