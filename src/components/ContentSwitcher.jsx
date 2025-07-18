@@ -25,9 +25,11 @@ export default function ContentSwitcher() {
     };
 
     return (
-        <div class='flex flex-row gap-[50px]'>
+        <div className='flex flex-row gap-[50px]'>
             <Nav links={nav.links} activeKey={activeKey} onChange={setActiveKey} />
-            <main>{renderContent()}</main>
+            <main className="transition-opacity duration-500 ease-in-out opacity-100">
+                {renderContent()}
+            </main>
         </div>
     );
 }

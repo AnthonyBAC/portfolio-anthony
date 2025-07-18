@@ -1,14 +1,14 @@
 export default function Nav({ links, activeKey, onChange }) {
+
     return (
-        <nav className="min-w-auto max-w-auto flex justify-end">
+        <nav className="flex justify-end basis-auto flex-shrink-0 flex-grow-0">
             <ul className="list-none m-0 p-0 flex flex-col items-end gap-2.5">
                 {links.map((link) => (
                     <li key={link.key}>
                         <button
                             type="button"
-                            className={`text-blue-600 hover:underline ${activeKey === link.key ? "font-bold underline" : ""
-                                }`}
                             onClick={() => onChange(link.key)}
+
                         >
                             {link.name}
                         </button>
